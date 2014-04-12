@@ -1,0 +1,8 @@
+{
+  "name": "CSS/HTML Patterns",
+  "version": "0.1.0",
+  "main": "",
+  "dependencies": {
+    "applepie": "0.1.0-rc.1"
+  }
+}

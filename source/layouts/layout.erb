@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "The Middleman" %></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+  <body class="<%= page_classes %>">
+    <header class="app-header">
+      <div class="app-brand">
+        <a href="" class="icon-github"></a>
+        <a href="" class="icon-twitter"></a>
+        <a href="" class="icon-facebook"></a>
+        <a href="#" class="icon-bars right" id="toggle"></a>
+      </div>
+      <div class="last-col">
+        <a href="/">Common patterns of markup and style</a>
+      </div>
+    </header>
+    <section class="app-body">
+      <aside class="app-sidebar">
+        <div class="app-scroller">
+          <h4 class="pam">CONTENTS</h4>
+          <ul class="app-navigation">
+            <li><a href="" class="icon-code"> Layouts</a></li>
+            <li><a href="" class="icon-code"> Navigation</a></li>
+            <li><a href="" class="icon-code"> Tabs</a></li>
+            <li><a href="" class="icon-code"> Inputs</a></li>
+            <li><a href="" class="icon-code"> Buttons</a></li>
+            <li><a href="" class="icon-code"> Article</a></li>
+            <li><a href="" class="icon-code"> Icons</a></li>
+          </ul>
+        </div>
+      </aside>
+      <div class="last-col">
+        <div class="app-scroller">
+          <section class="app-content">
+            <%= yield %>
+          </section>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
