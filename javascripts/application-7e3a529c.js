@@ -1,0 +1,1 @@
+!function(){window.setHeight=function(){var e;return e=$(window).height()-$(".app-header").height(),$(".app-scroller").height(e)},$(function(){return function(){return setHeight(),$(window).resize(function(){return setHeight()}),$("#toggle").click(function(e){return e.preventDefault(),$(".app-sidebar").toggleClass("closed")})}}(this))}.call(this);
