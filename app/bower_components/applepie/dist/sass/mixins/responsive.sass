@@ -34,3 +34,26 @@ $break-x-large: 1200px
   @else if $size == print
     @media print
       @content
+
+=break($point)
+  @if $point == large
+    @media (max-width: 1600px)
+      @content
+  @if $point == standard
+    @media (max-width: 1024px)
+      @content
+  @if $point == medium
+    @media (max-width: 939px)
+      @content
+  @else if $point == small
+    @media (max-width: 767px)
+      @content
+  @else if $point == smaller
+    @media (max-width: 650px)
+      @content
+  @else if $point == portrait
+    @media (max-width: 480px)
+      @content
+  @else
+    @media (max-width: $point)
+      @content

@@ -31,9 +31,15 @@ header.app-header
       background: #2e3133
   a.icon-facebook
     padding: 0 12px 0 15px
+  +break(768px)
+    .app-brand
+      width: 100%
+    .last-col
+      display: none
 
 .app-body
   height: 100%
+  overflow: hidden
 
 .app-scroller
   overflow: scroll
@@ -47,11 +53,17 @@ aside.app-sidebar
   +transition(margin .3s)
   &.closed
     margin-left: -250px
+  +break(760px)
+    margin-left: -250px
+    &.closed
+      margin-left: 0px
 
 section.app-content
   padding: 20px 30px
   max-width: 1024px
   margin: 0 auto
+  +break(640px)
+    padding: 10px
 
 .app-sidebar .app-navigation
   list-style: none
