@@ -1,0 +1,31 @@
+.app-panel
+  position: relative
+  padding: 50px 30px 30px 30px
+  background: #fff
+  border-radius: 2px
+  &.result
+    padding: 60px 30px
+  &:before
+    position: absolute
+    display: inline-block
+    text-transform: uppercase
+    font-size: 12px
+    font-weight: bold
+    padding: 3px 10px
+    color: #fff
+    left: 0
+    top: 20px
+    +border-radius(0 3px 3px 0)
+  &.html:before
+    background: #5bc0de
+    content: 'HTML'
+  &.css:before
+    background: #f0ad4e
+    content: 'CSS'
+  &.result:before
+    background: #5cb85c
+    content: 'Result'
+
+code pre
+  font-family: "Monaco"
+  font-size: 12px

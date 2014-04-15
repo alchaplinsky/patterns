@@ -1,10 +1,11 @@
-@import "../../app/bower_components/applepie/dist/sass/mixins/vendor_prefixes"
+@import "../../../app/bower_components/applepie/dist/sass/mixins/vendor_prefixes"
+
 html, body
   height: 100%
 
 body
   font-size: 14px
-  background: #edece4
+  background: #efefef
   -webkit-font-smoothing: antialiased
   overflow: hidden
 
@@ -64,22 +65,3 @@ section.app-content
   margin: 0 auto
   +break(640px)
     padding: 10px
-
-.app-sidebar .app-navigation
-  list-style: none
-  margin: 0
-  a
-    display: block
-    padding: 10px 20px
-    line-height: 1.5
-    font-size: 14px
-    color: #e2edf2
-    border-bottom: 1px solid #35393b
-    +transition( background .3s)
-    &:hover
-      background: #242628
-
-.app-panel
-  padding: 20px
-  background: #fff
-  border-radius: 2px

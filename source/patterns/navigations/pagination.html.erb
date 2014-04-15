@@ -1,0 +1,54 @@
+---
+title: Pagination pattern
+---
+<div class="app-panel result mbm"></div>
+<div class="row">
+  <div class="col1of2 prs">
+    <div class="app-panel html">
+      <ul class="pagination">
+        <li><a href="#">«</a></li>
+        <li><a href="#" class="active">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col1of2 pls">
+    <div class="app-panel css">
+      <code><pre>
+.pagination {
+  list-style: none;
+}
+.pagination li {
+  display: inline-block;
+}
+.pagination a {
+  display: block;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #428bca;
+  margin-left: -6px;
+  border: 1px solid #ddd;
+}
+.pagination li:first-child a {
+  border-radius: 3px 0 0 3px;
+}
+.pagination li:last-child a {
+  border-radius: 0 3px 3px 0;
+}
+.pagination a:hover {
+  background: #eee;
+}
+.pagination a.active {
+  color: #fff;
+  cursor: default;
+  font-weight: bold;
+  border-color: #428bca;
+  background: #428bca;
+}</pre></code>
+    </div>
+  </div>
+</div>

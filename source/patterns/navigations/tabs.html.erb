@@ -1,0 +1,48 @@
+---
+title: Tabs Navigation pattern
+---
+<div class="app-panel result mbm"></div>
+<div class="row">
+  <div class="col1of2 prs">
+    <div class="app-panel html">
+      <ul class="tabs">
+        <li><a href="#" class="tab active">JavaSctipt</a></li>
+        <li><a href="#" class="tab">Ruby</a></li>
+        <li><a href="#" class="tab">Python</a></li>
+        <li><a href="#" class="tab">Java</a></li>
+        <li><a href="#" class="tab">PHP</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col1of2 pls">
+    <div class="app-panel css">
+      <code><pre>
+.tabs {
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+}
+.tabs li {
+  display: inline-block;
+}
+.tabs .tab {
+  display: block;
+  padding: 5px 20px;
+  color: #777;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+}
+.tabs .tab:hover {
+  color: #000;
+}
+.tabs .tab.active {
+  color: #000;
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+  font-weight: bold;
+}</pre></code>
+    </div>
+  </div>
+</div>
