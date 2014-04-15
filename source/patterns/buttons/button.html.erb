@@ -1,0 +1,47 @@
+---
+title: CSS Buttons pattern
+---
+<div class="app-panel result mbm">
+  <a href="#" class="button">Button text</a>
+  <input type="button" class="button" value="Button text" />
+  <button class="button">Button text</button>
+</div>
+<div class="row">
+  <div class="col1of2 prs">
+    <div class="app-panel html">
+<% code("html") do %>
+<a href="#" class="button">Button text</a>
+<input type="submit" class="button" value="Button text" />
+<button class="button">Button text</button>
+<%end%>
+    </div>
+  </div>
+  <div class="col1of2 pls">
+    <div class="app-panel css">
+<% code("css") do %>
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  line-height: 1.3125rem;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+  background: #76b6ec;
+  color: #fff;
+  border-radius: 4px;
+}
+.button:hover {
+  background: #64a9e3;
+  color: #fff;
+}
+.button:active {
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+}
+/* Hack for mozilla to remove extra padding */
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}<%end%>
+    </div>
+  </div>
+</div>

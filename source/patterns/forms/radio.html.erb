@@ -1,0 +1,59 @@
+---
+title: Custom radio button pattern
+---
+<div class="app-panel result mbm">
+  <input type="radio" name="answer" id="r1" checked="checked" /> <label for="r1">Yes</label>
+  &nbsp;
+  <input type="radio" name="answer" id="r2" /> <label for="r2">No</label>
+</div>
+<div class="row">
+  <div class="col1of2 prs">
+    <div class="app-panel html">
+<% code("html") do %>
+<input type="radio" name="answer" id="r1" checked="checked"/>
+<label for="r1">Yes</label>
+
+<input type="radio" name="answer" id="r2" />
+<label for="r2">No</label>
+<%end%>
+    </div>
+  </div>
+  <div class="col1of2 pls">
+    <div class="app-panel css">
+<% code("css") do %>
+input[type=radio] {
+  display: none;
+}
+input[type=radio]+label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+  font-size: 13px;
+}
+input[type=radio]+label:before {
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border: 1px solid #e0e0e0;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+input[type=radio]:checked+label:before {
+  font-family: Arial;
+  content: "\2022";
+  color: #aaa;
+  font-size: 15px;
+  text-align: center;
+  line-height: 13px;
+}<%end%>
+    </div>
+  </div>
+</div>

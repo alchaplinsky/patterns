@@ -1,0 +1,34 @@
+---
+title: Custom select pattern
+---
+<div class="app-panel result mbm">
+  <select name="options" id="s1">
+    <option value="Europe">Europe</option>
+    <option value="Asia">Asia</option>
+    <option value="Africa">Africa</option>
+    <option value="Australia">Australia</option>
+  </select>
+</div>
+<div class="row">
+  <div class="col1of2 prs">
+    <div class="app-panel html">
+<% code("html") do %>
+<select name="options" id="s1">
+  <option value="Europe">Europe</option>
+  <option value="Asia">Asia</option>
+  <option value="Africa">Africa</option>
+  <option value="Australia">Australia</option>
+</select>
+<%end%>
+    </div>
+  </div>
+  <div class="col1of2 pls">
+    <div class="app-panel css">
+<% code("css") do %>
+.select {
+
+}
+<%end%>
+    </div>
+  </div>
+</div>

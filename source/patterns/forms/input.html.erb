@@ -1,0 +1,34 @@
+---
+title: Text input pattern
+---
+<div class="app-panel result mbm">
+  <input type="text" placeholder="Enter email" />
+</div>
+<div class="row">
+  <div class="col1of2 prs">
+    <div class="app-panel html">
+<% code("html") do %>
+<input type="text" placeholder="Enter email" />
+<%end%>
+    </div>
+  </div>
+  <div class="col1of2 pls">
+    <div class="app-panel css">
+<% code("css") do %>
+input[type=text] {
+  display: block;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color .4s
+}
+input[type=text]:focus {
+  border-color: #66afe9
+}<%end%>
+    </div>
+  </div>
+</div>
