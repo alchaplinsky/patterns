@@ -1,22 +1,32 @@
 ---
 title: Tabs Navigation pattern
 ---
-<div class="app-panel result mbm"></div>
+<div class="app-panel result mbm">
+  <ul class="tabs">
+    <li><a href="#" class="tab active">JavaSctipt</a></li>
+    <li><a href="#" class="tab">Ruby</a></li>
+    <li><a href="#" class="tab">Python</a></li>
+    <li><a href="#" class="tab">Java</a></li>
+    <li><a href="#" class="tab">PHP</a></li>
+  </ul>
+</div>
 <div class="row">
   <div class="col1of2 prs">
     <div class="app-panel html">
-      <ul class="tabs">
-        <li><a href="#" class="tab active">JavaSctipt</a></li>
-        <li><a href="#" class="tab">Ruby</a></li>
-        <li><a href="#" class="tab">Python</a></li>
-        <li><a href="#" class="tab">Java</a></li>
-        <li><a href="#" class="tab">PHP</a></li>
-      </ul>
+<% code("html") do %>
+<ul class="tabs">
+  <li><a href="#" class="tab active">JavaSctipt</a></li>
+  <li><a href="#" class="tab">Ruby</a></li>
+  <li><a href="#" class="tab">Python</a></li>
+  <li><a href="#" class="tab">Java</a></li>
+  <li><a href="#" class="tab">PHP</a></li>
+</ul>
+<%end%>
     </div>
   </div>
   <div class="col1of2 pls">
     <div class="app-panel css">
-      <code><pre>
+<% code("css") do %>
 .tabs {
   list-style: none;
   border-bottom: 1px solid #ddd;
@@ -42,7 +52,7 @@ title: Tabs Navigation pattern
   border-bottom: 1px solid #fff;
   margin-bottom: -1px;
   font-weight: bold;
-}</pre></code>
+}<%end%>
     </div>
   </div>
 </div>

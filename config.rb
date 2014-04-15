@@ -33,6 +33,8 @@
 ###
 
 # Automatic image dimensions on image_tag helper
+
+activate :syntax
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change

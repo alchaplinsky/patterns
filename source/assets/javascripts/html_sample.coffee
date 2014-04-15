@@ -5,11 +5,7 @@ class window.CodeSample
     @html = @el.html()
     @text = htmlToText(@html)
 
-  replace: ->
-    $(@el).html("<code><pre>#{@text}</pre></code>")
-
   example: ->
-    $('.app-panel.result').html(@html)
     styleTag = $('<style/>').html($('.app-panel.css pre').text())
     $('head').append(styleTag)
 

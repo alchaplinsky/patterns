@@ -7,7 +7,6 @@ $ =>
 
   # Build code samples and result
   sample = new CodeSample()
-  sample.replace()
   sample.example()
 
   # Height calculation

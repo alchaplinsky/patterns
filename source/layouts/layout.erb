@@ -9,7 +9,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <%= stylesheet_link_tag "application" %>
+    <%= stylesheet_link_tag "application", "syntax" %>
+
     <%= javascript_include_tag  "all" %>
   </head>
   <body class="<%= page_classes %>">

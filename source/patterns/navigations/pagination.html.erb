@@ -1,24 +1,36 @@
 ---
 title: Pagination pattern
 ---
-<div class="app-panel result mbm"></div>
+<div class="app-panel result mbm">
+  <ul class="pagination">
+    <li><a href="#">«</a></li>
+    <li><a href="#" class="active">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">»</a></li>
+  </ul>
+</div>
 <div class="row">
   <div class="col1of2 prs">
     <div class="app-panel html">
-      <ul class="pagination">
-        <li><a href="#">«</a></li>
-        <li><a href="#" class="active">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">»</a></li>
-      </ul>
+<% code("html") do %>
+<ul class="pagination">
+  <li><a href="#">«</a></li>
+  <li><a href="#" class="active">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">»</a></li>
+</ul>
+<%end%>
     </div>
   </div>
   <div class="col1of2 pls">
     <div class="app-panel css">
-      <code><pre>
+<% code("css") do %>
 .pagination {
   list-style: none;
 }
@@ -48,7 +60,7 @@ title: Pagination pattern
   font-weight: bold;
   border-color: #428bca;
   background: #428bca;
-}</pre></code>
+}<%end%>
     </div>
   </div>
 </div>

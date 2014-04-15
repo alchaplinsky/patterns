@@ -1,42 +1,52 @@
 ---
 title: Horizontal Navigation pattern
 ---
-<div class="app-panel result mbm"></div>
+<div class="app-panel result mbm">
+  <ul class="navigation">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contacts</a></li>
+    <li><a href="#">Twitter</a></li>
+  </ul>
+</div>
 <div class="row">
   <div class="col1of2 prs">
     <div class="app-panel html">
-      <ul class="navigation">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">Twitter</a></li>
-      </ul>
+<% code("html") do %>
+<ul class="navigation">
+  <li><a href="#" class="active">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Contacts</a></li>
+  <li><a href="#">Twitter</a></li>
+</ul>
+<%end%>
     </div>
   </div>
   <div class="col1of2 pls">
     <div class="app-panel css">
-      <code><pre>
-.navigation {
-  list-style: none;
-}
-.navigation li {
-  display: inline-block;
-}
-.navigation li a {
-  display: block;
-  padding: 5px 20px;
-  color: #777;
-}
-.navigation li a:hover {
-  color: #000;
-  background: #fafafa;
-  border-radius: 3px;
-}
-.navigation li a.active {
-  color: #000;
-  font-weight: bold;
-}</pre></code>
+<% code("css") do %>
+  .navigation {
+    list-style: none;
+  }
+  .navigation li {
+    display: inline-block;
+  }
+  .navigation li a {
+    display: block;
+    padding: 5px 20px;
+    color: #777;
+  }
+  .navigation li a:hover {
+    color: #000;
+    background: #fafafa;
+    border-radius: 3px;
+  }
+  .navigation li a.active {
+    color: #000;
+    font-weight: bold;
+  }<%end%>
     </div>
   </div>
 </div>
