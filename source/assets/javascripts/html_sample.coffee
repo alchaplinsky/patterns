@@ -3,7 +3,7 @@ class window.CodeSample
   constructor: ->
     @el = $('.app-panel.html')
     @html = @el.html()
-    @text = htmlToText(@html)
+    #@text = htmlToText(@html)
 
   example: ->
     styleTag = $('<style/>').html($('.app-panel.css pre').text())
